@@ -1,0 +1,19 @@
+.root {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex-grow: 25;
+}
+
+app-header {
+  flex-grow: 1;
+}
+
+app-footer {
+  flex-grow: 1;
+}
