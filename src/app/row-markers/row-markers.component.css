@@ -1,0 +1,7 @@
+.content {
+    justify-content: space-evenly;
+}
+
+.value > div {
+    text-align: center;
+}

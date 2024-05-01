@@ -17,3 +17,7 @@ app-header {
 app-footer {
   flex-grow: 1;
 }
+
+app-board {
+  flex-grow: 6;
+}

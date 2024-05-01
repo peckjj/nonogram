@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* 
+Quick Reference
+
+full: width and height fits container
+full-row: width 100%
+full-col: height 100%
+flex-row: applies flex display w/ row-major axis
+flex-col: applies flex display w/ non-row-major axis. AKA row-minor axis. AKA column-major axis. Or maybe a vertical-row-major-axis. Perhaps a vertical-horizontal-column-major-axis.
+flex-row-center: applies flex centering on row axis
+flex-col-center: applies flex centering on column axis
+flex-unit: apply flex-grow of 1
+no-margin: ...no margin
+no-padding: Adds anti-padding
+outline: shows a visible outline on the container
+square: applies an aspect-ratio of 1
+whitegold-bg: adds a white-gold gradient background (would've looked really cool in the 90's)
+
+*/
+
 .full {
   height: 100%;
   width: 100%;
@@ -7,8 +26,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
+}
+
+.square {
+  aspect-ratio: 1;
 }
 
 .no-margin {
@@ -21,6 +42,10 @@ body {
 
 .full-row {
   width: 100%;
+}
+
+.full-col {
+  height: 100%;
 }
 
 * {
@@ -104,4 +129,26 @@ body {
     #ffdea1 84%,
     #736445
   );
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-center {
+  justify-content: center;
+}
+
+.flex-col-center {
+  align-items: center;
+}
+
+.flex-unit {
+  flex-grow: 1;
 }
