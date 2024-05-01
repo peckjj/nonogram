@@ -1,13 +1,19 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { ICell } from '../../Interfaces/ICell';
+import { Constants } from '../../Classes/Contants';
 
 @Component({
   selector: 'app-cell',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './cell.component.html',
   styleUrl: './cell.component.css'
 })
 export class CellComponent {
-  @Input( {required: true} ) x!: number;
-  @Input( {required: true} ) y!: number;
+  @Input( {required: true} ) cell!: ICell;
+
+  getBackgroundColor() {
+    return this.cell.isOn ? Constants.BoardConsts.ON_BACKGROUND : Constants.BoardConsts.OFF_BACKGROUND;
+  }
 }

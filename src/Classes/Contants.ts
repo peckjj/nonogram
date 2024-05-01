@@ -4,6 +4,11 @@ export class Constants {
         static readonly IS_OFF_SYMBOL = ".";
     }
 
+    static readonly BoardConsts = class {
+        static readonly ON_BACKGROUND = 'white';
+        static readonly OFF_BACKGROUND = 'black';
+    }
+
     static readonly DummySolution = class {
         static readonly ALL_ON_5_5 = 
         'XXXXX' + Constants.SequenceConsts.ROW_DELIMIT +

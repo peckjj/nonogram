@@ -6,7 +6,7 @@
         </div>
         <div class="full flex-row flex-row-center" *ngFor="let _ of getRowIndices(); let y = index">
             <app-row-markers class="full" [values]="getRowMarkers(y)"></app-row-markers>
-            <app-cell class="full" *ngFor="let _ of getColIndices(); let x = index" [x]="x" [y]="y"></app-cell>
+            <app-cell class="full" *ngFor="let _ of getColIndices(); let x = index" [cell]="grid.getCell(x, y)"></app-cell>
         </div>
     </div>
 </div>

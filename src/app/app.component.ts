@@ -5,7 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { BoardComponent } from './board/board.component';
 import { ContentPanelComponent } from './content-panel/content-panel.component';
 import { IGrid } from '../Interfaces/IGrid';
-import { CellGrid } from '../Classes/CellGrid';
 import { Constants } from '../Classes/Contants';
 import { CellGridSolution } from '../Classes/CellGridSolution';
 
@@ -26,7 +25,7 @@ export class AppComponent {
   }
 
   private createGrid(): IGrid {
-    let solution = new CellGridSolution(Constants.DummySolution.DIAGONAL_GROW_5_5);
+    let solution = new CellGridSolution(Constants.DummySolution.DISPERSED_5_5);
 
     solution.print();
 
