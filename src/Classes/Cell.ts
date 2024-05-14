@@ -8,11 +8,21 @@ export class Cell implements ICell {
     private _x: number;
     private _y: number;
     private _isOn: boolean;
+    private _isRevealed: boolean;
     
     public constructor(x: number, y: number) {
         this._x = x;
         this._y = y;
         this._isOn = false;
+        this._isRevealed = false;
+    }
+
+    get isRevealed() {
+        return this._isRevealed;
+    }
+
+    set isRevealed(value: boolean) {
+        this._isRevealed = value;
     }
 
     public get state() {

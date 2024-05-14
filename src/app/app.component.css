@@ -12,6 +12,7 @@
 
 app-header {
   flex-grow: 1;
+  min-height: 4%;
 }
 
 app-footer {
@@ -20,4 +21,7 @@ app-footer {
 
 app-board {
   flex-grow: 6;
+}
+
+app-content-panel {
 }

@@ -8,5 +8,7 @@ export enum CellMark {
     SEPTAGON,
     OCTAGON,
     NONAGON,
-    STAR
+    STAR,
+
+    NUM_CELLMARKS
 }

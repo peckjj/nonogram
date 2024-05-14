@@ -1,5 +1,7 @@
 export enum CellState {
     CHECKED,
     ELIMINATED,
-    NONE
+    NONE,
+
+    NUM_CELLSTATES
 }

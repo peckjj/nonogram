@@ -1,9 +1,9 @@
-import { Abs_Solution } from "../Interfaces/ISolution";
+import { ISolution } from "../Interfaces/ISolution";
 import { IGrid } from "../Interfaces/IGrid";
 import { CellGrid } from "./CellGrid";
 import { Constants } from "./Contants";
 
-export class CellGridSolution extends Abs_Solution {
+export class CellGridSolution extends ISolution {
     
     override createGrid(): IGrid {
         let data = this.sequence.split(Constants.SequenceConsts.ROW_DELIMIT);

@@ -103,4 +103,24 @@ export class CellGrid implements IGrid {
 
         return ret;
     }
+
+    copy(): IGrid {
+        let newGrid = new CellGrid(this.height, this.width);
+
+        newGrid.allCells().forEach(cell => {
+            cell = this.getCell(cell.x, cell.y).copy();
+        });
+
+        return newGrid;
+    }
+
+    allCells(): ICell[] {
+        let ret: ICell[] = [];
+        
+        this.grid.forEach(row => {
+            row.forEach(el => ret.push(el));
+        });
+
+        return ret;
+    }
 }

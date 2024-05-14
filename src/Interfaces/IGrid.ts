@@ -9,4 +9,8 @@ export interface IGrid {
     getColumnMarkers(col: number): number[];
     getRow(row: number): ICell[];
     getRowMarkers(row: number): number[];
+
+    allCells(): ICell[];
+
+    copy(): IGrid;
 }

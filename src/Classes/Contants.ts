@@ -6,7 +6,7 @@ export class Constants {
 
     static readonly BoardConsts = class {
         static readonly ON_BACKGROUND = 'white';
-        static readonly OFF_BACKGROUND = 'black';
+        static readonly OFF_BACKGROUND = '#0F0F0F';
     }
 
     static readonly DummySolution = class {

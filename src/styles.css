@@ -15,6 +15,7 @@ no-padding: Adds anti-padding
 outline: shows a visible outline on the container
 square: applies an aspect-ratio of 1
 whitegold-bg: adds a white-gold gradient background (would've looked really cool in the 90's)
+perl-bg: adds a perl gradient background
 
 */
 
@@ -128,6 +129,94 @@ body {
     #ffffff 80%,
     #ffdea1 84%,
     #736445
+  );
+}
+
+.perl-bg {
+  color: #e9e9e9;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow:
+    1px 1px 0 #ffffff,
+    -1px -1px 0 #b7b7b7
+  ;
+  box-shadow:
+    2px 2px 0.5em rgba(98, 73, 122, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.34)
+  ;
+  border: 1px solid #cacaca;
+  background:
+  -moz-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #caa1de 27%,
+    #dea1ca 30%,
+    #dedede 38%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #caa1de 93%,
+    #dea1ca
+  );
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #caa1de 27%,
+    #dea1ca 30%,
+    #dedede 38%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #caa1de 93%,
+    #dea1ca
+  );
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #caa1de 27%,
+    #dea1ca 30%,
+    #dedede 38%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #caa1de 93%,
+    #dea1ca
+  );
+  background:
+  linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #caa1de 27%,
+    #dea1ca 30%,
+    #dedede 38%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #caa1de 93%,
+    #dea1ca
   );
 }
 

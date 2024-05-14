@@ -2,7 +2,7 @@ import { Constants } from "../Classes/Contants";
 import { NonogramSequenceError } from "../Errors/NonogramSequenceError";
 import { IGrid } from "./IGrid";
 
-export abstract class Abs_Solution {
+export abstract class ISolution {
     private _sequence!: string;
 
     get sequence() {

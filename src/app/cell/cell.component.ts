@@ -14,6 +14,7 @@ export class CellComponent {
   @Input( {required: true} ) cell!: ICell;
 
   getBackgroundColor() {
-    return this.cell.isOn ? Constants.BoardConsts.ON_BACKGROUND : Constants.BoardConsts.OFF_BACKGROUND;
+    return this.cell.isOn ? `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`//Constants.BoardConsts.ON_BACKGROUND 
+      : Constants.BoardConsts.OFF_BACKGROUND;
   }
 }

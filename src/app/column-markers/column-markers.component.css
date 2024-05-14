@@ -1,7 +1,3 @@
-.content {
-    flex-flow: column-reverse;
-}
-
 .value > div {
     text-align: center;
 }
